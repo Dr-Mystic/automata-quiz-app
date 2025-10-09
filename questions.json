@@ -1,0 +1,602 @@
+[
+{
+"question": "What does DFA stand for in Automata theory?",
+"options": ["Deterministic Finite Automaton", "Defined Function Automaton", "Default Finite Algorithm", "Dynamic Finite Automaton"],
+"answer": "Deterministic Finite Automaton",
+"explanation": "DFA stands for Deterministic Finite Automaton, which is a theoretical machine used to recognize regular languages."
+},
+{
+"question": "Which component is NOT part of a DFA?",
+"options": ["Set of states", "Input alphabet", "Stack", "Transition function"],
+"answer": "Stack",
+"explanation": "DFA does not use a stack; stacks are components of pushdown automata (PDA)."
+},
+{
+"question": "What is the function of the δ (delta) function in DFA?",
+"options": ["Transition function", "Start state", "Set of final states", "Input alphabet"],
+"answer": "Transition function",
+"explanation": "The δ function maps a current state and input symbol to the next state in a DFA."
+},
+{
+"question": "Which of the following is true for every DFA?",
+"options": ["Can accept context-free languages", "Has multiple start states", "Has a single accepting state", "Has exactly one start state"],
+"answer": "Has exactly one start state",
+"explanation": "A DFA must have exactly one start state by definition."
+},
+{
+"question": "Which operation is not closed under regular languages?",
+"options": ["Union", "Concatenation", "Complement", "Intersection with context-free"],
+"answer": "Intersection with context-free",
+"explanation": "Regular languages are not closed under intersection with context-free languages."
+},
+{
+"question": "What is the output of a DFA?",
+"options": ["A tape with written symbols", "A computation tree", "Accept or reject", "Parsed grammar"],
+"answer": "Accept or reject",
+"explanation": "A DFA either accepts or rejects an input string based on whether it reaches a final state."
+},
+{
+"question": "Which of the following represents an infinite language?",
+"options": ["{a, b}", "{ab}", "{a^n | n ≥ 0}", "{ε}"],
+"answer": "{a^n | n ≥ 0}",
+"explanation": "The set {a^n | n ≥ 0} is infinite because it contains strings of arbitrary length."
+},
+{
+"question": "Which automaton uses ε-transitions?",
+"options": ["DFA", "NFA", "ε-NFA", "PDA only"],
+"answer": "ε-NFA",
+"explanation": "ε-NFAs allow transitions without consuming input symbols using ε-moves."
+},
+{
+"question": "What is the power of DFA compared to NFA?",
+"options": ["Less powerful", "More powerful", "Equally powerful", "None"],
+"answer": "Equally powerful",
+"explanation": "Both DFA and NFA recognize exactly the regular languages."
+},
+{
+"question": "Which operation is not applicable to regular languages?",
+"options": ["Union", "Concatenation", "Reversal", "Parsing"],
+"answer": "Parsing",
+"explanation": "Parsing is a syntactic process typically used with context-free grammars, not regular languages."
+},
+{
+"question": "What does the Kleene star () denote?",
+"options": ["Optional repetition", "Infinite repetition", "Zero or more repetitions", "Concatenation"],
+"answer": "Zero or more repetitions",
+"explanation": "Kleene star allows zero or more repetitions of a symbol or string."
+},
+{
+"question": "What is the language accepted by a DFA called?",
+"options": ["Regular language", "Context-free language", "Recursive language", "Unrestricted language"],
+"answer": "Regular language",
+"explanation": "The class of languages accepted by DFAs is known as regular languages."
+},
+{
+"question": "Which of the following strings is accepted by the regular expression ab?",
+"options": ["ab", "aab", "b", "All of the above"],
+"answer": "All of the above",
+"explanation": "The expression ab matches any number of a’s (including 0) followed by a b."
+},
+{
+"question": "Which symbol denotes an empty string?",
+"options": ["λ", "ε", "Ø", "0"],
+"answer": "ε",
+"explanation": "ε is commonly used to denote the empty string in formal languages."
+},
+{
+"question": "What does NFA stand for?",
+"options": ["Non-Finite Automaton", "Non-Deterministic Finite Automaton", "Normal Finite Automaton", "Non-Function Automaton"],
+"answer": "Non-Deterministic Finite Automaton",
+"explanation": "NFA stands for Non-Deterministic Finite Automaton, which allows multiple transitions for the same input."
+},
+{
+"question": "Which of the following is true for NFA?",
+"options": ["Has exactly one transition per input", "Can have multiple next states", "Only one accepting state", "No ε-transitions"],
+"answer": "Can have multiple next states",
+"explanation": "NFAs can move to multiple states from a given state and input symbol."
+},
+{
+"question": "Which machine uses a stack?",
+"options": ["DFA", "NFA", "PDA", "Turing Machine"],
+"answer": "PDA",
+"explanation": "Pushdown Automata (PDA) are automata that use a stack for memory."
+},
+{
+"question": "Which of these languages is not regular?",
+"options": ["L = {a^n b^n | n ≥ 0}", "L = {a, aa, aaa}", "L = {a^n | n mod 2 = 0}", "L = {a^n b | n ≥ 0}"],
+"answer": "L = {a^n b^n | n ≥ 0}",
+"explanation": "This language requires counting, which regular languages cannot do."
+},
+{
+"question": "Which property is preserved under NFA to DFA conversion?",
+"options": ["Number of states", "Input string length", "Language accepted", "Transition count"],
+"answer": "Language accepted",
+"explanation": "The NFA and DFA accept the same language even if the number of states differs."
+},
+{
+"question": "Which model is more powerful than DFA?",
+"options": ["NFA", "PDA", "Regular Expression", "Finite State Machine"],
+"answer": "PDA",
+"explanation": "PDA can recognize context-free languages, which DFA cannot."
+},
+{
+"question": "What does the term ‘configuration’ of a Turing machine refer to?",
+"options": ["Current state only", "Tape content only", "State, tape, head position", "Set of final states"],
+"answer": "State, tape, head position",
+"explanation": "A configuration in a Turing Machine consists of the current state, tape content, and head position."
+},
+{
+"question": "Which language is context-free but not regular?",
+"options": ["{a^n | n > 0}", "{a^n b^n | n ≥ 0}", "{a^n b^m | n,m ≥ 0}", "{a^}"],
+"answer": "{a^n b^n | n ≥ 0}",
+"explanation": "This language requires matching counts, which regular languages can't do but context-free grammars can."
+},
+{
+"question": "What does PDA stand for?",
+"options": ["Pushdown Automaton", "Push-Device Automaton", "Pulldown Automaton", "Pushdown Algorithm"],
+"answer": "Pushdown Automaton",
+"explanation": "PDA stands for Pushdown Automaton, a type of automaton that uses a stack for memory."
+},
+{
+"question": "Which of the following is true for PDA?",
+"options": ["Accepts regular languages", "Recognizes context-sensitive languages", "Accepts context-free languages", "Accepts all languages"],
+"answer": "Accepts context-free languages",
+"explanation": "PDA is used to accept context-free languages like balanced parentheses."
+},
+{
+"question": "What is the purpose of a stack in PDA?",
+"options": ["To store states", "To accept input", "To store symbols for memory", "To perform arithmetic"],
+"answer": "To store symbols for memory",
+"explanation": "The stack stores symbols to help recognize patterns requiring memory, such as nested structures."
+},
+{
+"question": "Which of the following is a valid operation on regular languages?",
+"options": ["Intersection", "Union", "Complement", "All of the above"],
+"answer": "All of the above",
+"explanation": "Regular languages are closed under union, intersection, and complement operations."
+},
+{
+"question": "What is the primary difference between DFA and NFA?",
+"options": ["NFA can have multiple transitions for the same input", "DFA can have lambda transitions", "NFA always has more states than DFA", "DFA accepts more languages"],
+"answer": "NFA can have multiple transitions for the same input",
+"explanation": "In NFA, for a given state and input, there can be multiple possible next states, unlike DFA."
+},
+{
+"question": "Which one of the following is not a regular expression?",
+"options": ["a*", "(a|b)", "(a+b)*", "a(b"],
+"answer": "a(b",
+"explanation": "The expression 'a(b' is incomplete and syntactically incorrect due to the unmatched parenthesis."
+},
+{
+"question": "Which of the following is used to represent empty string in regular expressions?",
+"options": ["λ", "ε", "∅", "Both λ and ε"],
+"answer": "Both λ and ε",
+"explanation": "λ and ε are commonly used to denote the empty string depending on notation preference."
+},
+{
+"question": "Which machine can recognize non-regular languages?",
+"options": ["DFA", "NFA", "PDA", "None"],
+"answer": "PDA",
+"explanation": "Pushdown Automata (PDA) are more powerful than DFA/NFA and can recognize context-free (non-regular) languages."
+},
+{
+"question": "What is the result of concatenating two regular languages?",
+"options": ["Context-free language", "Unregular language", "Regular language", "None of the above"],
+"answer": "Regular language",
+"explanation": "Regular languages are closed under concatenation, so the result is also a regular language."
+},
+{
+"question": "What does ε-NFA mean?",
+"options": ["NFA without input", "NFA with epsilon transitions", "DFA with empty transitions", "None of the above"],
+"answer": "NFA with epsilon transitions",
+"explanation": "ε-NFA refers to a Non-deterministic Finite Automaton that allows transitions without consuming input (epsilon transitions)."
+},
+{
+"question": "What is the minimum number of states needed to accept the language {a}?",
+"options": ["0", "1", "2", "3"],
+"answer": "2",
+"explanation": "One state for start, one for accepting 'a'. Minimum two states are required."
+},
+{
+"question": "Which of the following is not closed under regular languages?",
+"options": ["Union", "Intersection", "Complement", "Intersection with context-free language"],
+"answer": "Intersection with context-free language",
+"explanation": "The intersection of a regular language with a context-free language is not necessarily regular."
+},
+{
+"question": "Which operation is used in a Turing Machine but not in a PDA?",
+"options": ["Push", "Pop", "Move head left", "Read input"],
+"answer": "Move head left",
+"explanation": "Turing machines can move the tape head both left and right, while PDA stack access is only one-way (LIFO)."
+},
+{
+"question": "Which of the following grammars generates a regular language?",
+"options": ["A → aA | b", "A → aBb", "A → aAb | ε", "A → aA | bA | ε"],
+"answer": "A → aA | b",
+"explanation": "The production A → aA | b is right-linear and generates a regular language."
+},
+{
+"question": "What is the role of the stack in a PDA?",
+"options": ["Store previous states", "Track visited nodes", "Provide memory for nested structures", "None"],
+"answer": "Provide memory for nested structures",
+"explanation": "The stack in PDA enables recognition of context-free structures like nested parentheses."
+},
+{
+"question": "Which language is not accepted by any PDA?",
+"options": ["{a^n b^n | n ≥ 0}", "{a^n b^n c^n | n ≥ 0}", "{a^n | n ≥ 0}", "All are accepted"],
+"answer": "{a^n b^n c^n | n ≥ 0}",
+"explanation": "This language requires two memory stacks and is not context-free; hence, PDA cannot accept it."
+},
+{
+"question": "Which type of grammar is used for parsing in programming languages?",
+"options": ["Unrestricted", "Context-sensitive", "Context-free", "Regular"],
+"answer": "Context-free",
+"explanation": "Most programming languages have a context-free grammar as it is suitable for syntactic parsing."
+},
+{
+"question": "In a DFA, what is the maximum number of transitions from a state for an input symbol?",
+"options": ["1", "2", "Infinite", "Depends on input"],
+"answer": "1",
+"explanation": "By definition, a DFA has exactly one transition for each input symbol from a state."
+},
+{
+"question": "Which of the following is not a part of a DFA?",
+"options": ["States", "Input alphabet", "Stack", "Transition function"],
+"answer": "Stack",
+"explanation": "Stacks are used in PDA, not in DFA."
+},
+{
+"question": "Which method is used to prove a language is not regular?",
+"options": ["Pumping lemma", "Induction", "Turing machine", "Chomsky hierarchy"],
+"answer": "Pumping lemma",
+"explanation": "The pumping lemma provides a property all regular languages must satisfy, useful to prove non-regularity."
+},
+{
+"question": "Which of the following defines a leftmost derivation?",
+"options": ["Always replace rightmost non-terminal", "Always replace leftmost non-terminal", "Replace both ends", "Replace terminal only"],
+"answer": "Always replace leftmost non-terminal",
+"explanation": "In leftmost derivation, at each step, the leftmost non-terminal is replaced."
+},
+{
+"question": "Which of the following is a context-free grammar production?",
+"options": ["A → a", "A → aA", "A → aB | b", "All of the above"],
+"answer": "All of the above",
+"explanation": "All listed rules follow the form of a context-free production: one non-terminal on LHS."
+},
+{
+"question": "What type of machine is used to accept context-free languages?",
+"options": ["DFA", "NFA", "PDA", "TM"],
+"answer": "PDA",
+"explanation": "Pushdown Automata are capable of recognizing context-free languages."
+},
+{
+"question": "What is the initial state of a finite automaton called?",
+"options": ["Final state", "Accepting state", "Start state", "Transition state"],
+"answer": "Start state",
+"explanation": "The state where the automaton begins its computation is known as the start state."
+},
+{
+"question": "Which transition is unique to NFA but not present in DFA?",
+"options": ["Multiple transitions for same input", "Epsilon transitions", "No transition", "Both A and B"],
+"answer": "Both A and B",
+"explanation": "NFA may have multiple transitions for a symbol or epsilon (λ) transitions, which DFA cannot."
+},
+{
+"question": "How many accepting states can a DFA have?",
+"options": ["Only 1", "0 or more", "Exactly 2", "Unlimited but less than total states"],
+"answer": "0 or more",
+"explanation": "A DFA can have any number of accepting states, including none."
+},
+{
+"question": "Which form is used to simplify CFGs?",
+"options": ["Normal form", "Ambiguous form", "Greedy form", "Lazy form"],
+"answer": "Normal form",
+"explanation": "Normal forms such as Chomsky Normal Form (CNF) and Greibach Normal Form (GNF) are used to simplify CFGs."
+},
+{
+"question": "What is the Chomsky hierarchy used for?",
+"options": ["Classifying formal languages", "Classifying Turing machines", "Describing syntax trees", "Parsing ambiguous grammar"],
+"answer": "Classifying formal languages",
+"explanation": "The Chomsky hierarchy organizes languages based on generative power of their grammars."
+},
+{
+"question": "What does the transition function δ do in a DFA?",
+"options": ["Determines the start state", "Defines the final states", "Maps current state and input to next state", "Specifies the alphabet"],
+"answer": "Maps current state and input to next state",
+"explanation": "The transition function in a DFA maps a current state and input symbol to a single next state."
+},
+{
+"question": "Which machine uses a stack as its auxiliary memory?",
+"options": ["Finite Automaton", "Turing Machine", "Pushdown Automaton", "NFA"],
+"answer": "Pushdown Automaton",
+"explanation": "Pushdown Automata (PDA) use a stack to handle context-free languages."
+},
+{
+"question": "Which language is accepted by a PDA but not a DFA?",
+"options": ["L = {a^n b^n | n ≥ 0}", "L = {a^n | n is even}", "L = {a, b}", "L = {a^n b^m | n ≠ m}"],
+"answer": "L = {a^n b^n | n ≥ 0}",
+"explanation": "This language requires equal numbers of a's and b's, which a PDA can handle using a stack but a DFA cannot."
+},
+{
+"question": "What distinguishes NPDA from DPDA?",
+"options": ["NPDA uses two stacks", "DPDA uses non-determinism", "NPDA can be non-deterministic", "DPDA recognizes all context-free languages"],
+"answer": "NPDA can be non-deterministic",
+"explanation": "A Non-deterministic PDA allows multiple transitions for the same input and stack symbol, unlike a DPDA."
+},
+{
+"question": "Which of the following is a context-free language?",
+"options": ["L = {a^n b^n | n ≥ 0}", "L = {a^n b^n c^n | n ≥ 0}", "L = {ww | w ∈ {a, b}*}", "L = {a^n b^m c^k | n = m = k}"],
+"answer": "L = {a^n b^n | n ≥ 0}",
+"explanation": "Context-free grammars can express equal numbers of a's and b's, but not dependencies across three symbols."
+},
+{
+"question": "Which notation represents the set of all strings over an alphabet Σ?",
+"options": ["Σ*", "Σ+", "Σ^0", "Σ-"],
+"answer": "Σ*",
+"explanation": "Σ* is the Kleene closure of the alphabet, representing all strings of finite length including the empty string."
+},
+{
+"question": "Which of the following is not a closure property of regular languages?",
+"options": ["Union", "Intersection", "Complement", "Subtraction"],
+"answer": "Subtraction",
+"explanation": "Regular languages are closed under union, intersection, and complement, but subtraction is not always guaranteed."
+},
+{
+"question": "What is a λ-move (epsilon transition) in an NFA?",
+"options": ["Input move with λ symbol", "Move with input 'a'", "Transition to final state", "A transition without consuming input"],
+"answer": "A transition without consuming input",
+"explanation": "λ-moves allow the automaton to change state without reading an input symbol."
+},
+{
+"question": "Which machine can simulate any other machine given enough time and space?",
+"options": ["DFA", "NFA", "PDA", "Turing Machine"],
+"answer": "Turing Machine",
+"explanation": "Turing Machines are capable of simulating any computation, making them a universal model of computation."
+},
+{
+"question": "Which class of languages is recognized by Turing Machines?",
+"options": ["Context-free", "Regular", "Recursive enumerable", "Finite"],
+"answer": "Recursive enumerable",
+"explanation": "Turing Machines recognize recursively enumerable languages, which may or may not halt for all inputs."
+},
+{
+"question": "What does it mean for a Turing Machine to halt?",
+"options": ["Accepts input", "Enters a dead state", "Stops computation", "Rejects input"],
+"answer": "Stops computation",
+"explanation": "Halting means the machine enters a state where no transition is defined, thus stopping its operation."
+},
+{
+"question": "Which of the following problems is undecidable?",
+"options": ["DFA equivalence", "Turing Machine halting", "Regular expression equivalence", "PDA membership test"],
+"answer": "Turing Machine halting",
+"explanation": "The Halting Problem is a classic undecidable problem proven by Turing."
+},
+{
+"question": "What is the difference between a recursive and recursively enumerable language?",
+"options": ["Recursive languages are not accepted by Turing Machines", "Recursively enumerable may not halt on all inputs", "They are the same", "Recursively enumerable languages are finite"],
+"answer": "Recursively enumerable may not halt on all inputs",
+"explanation": "Recursive languages are accepted by Turing Machines that halt on all inputs; recursively enumerable may not halt."
+},
+{
+"question": "Which grammar type generates all regular languages?",
+"options": ["Type 0", "Type 1", "Type 2", "Type 3"],
+"answer": "Type 3",
+"explanation": "Type 3 grammars are regular grammars which generate all regular languages."
+},
+{
+"question": "In Chomsky hierarchy, context-free languages are in which category?",
+"options": ["Type 0", "Type 1", "Type 2", "Type 3"],
+"answer": "Type 2",
+"explanation": "Type 2 grammars generate context-free languages."
+},
+{
+"question": "What is the format of production rules in regular grammar?",
+"options": ["A → aB or A → a", "A → aBb", "A → εB", "A → BAB"],
+"answer": "A → aB or A → a",
+"explanation": "Regular grammars allow rules of the form A → a or A → aB."
+},
+{
+"question": "Which of these languages is not accepted by any PDA?",
+"options": ["L = {a^n b^n | n ≥ 0}", "L = {a^n b^n c^n | n ≥ 0}", "L = {a^n b^m | n ≠ m}", "L = {a^n | n is prime}"],
+"answer": "L = {a^n b^n c^n | n ≥ 0}",
+"explanation": "This language requires comparing three counts, which is beyond the power of a single-stack PDA."
+},
+{
+"question": "What does the pumping lemma prove?",
+"options": ["Determinism", "Closure", "Non-regularity", "Equivalence"],
+"answer": "Non-regularity",
+"explanation": "Pumping Lemma is used to prove that certain languages are not regular."
+},
+{
+"question": "Which of the following is an example of a non-context-free language?",
+"options": ["L = {a^n b^n}", "L = {a^n b^m}", "L = {a^n b^n c^n}", "L = {a^n b^m | n > m}"],
+"answer": "L = {a^n b^n c^n}",
+"explanation": "This language cannot be accepted by any PDA and is not context-free."
+},
+{
+"question": "Which machine models a general-purpose computer?",
+"options": ["DFA", "NFA", "PDA", "Turing Machine"],
+"answer": "Turing Machine",
+"explanation": "Turing Machines are capable of simulating the logic of any computer algorithm."
+},
+{
+"question": "What is the key property of a deterministic machine?",
+"options": ["Multiple transitions for same input", "At most one transition per input", "No transition function", "Uses stack memory"],
+"answer": "At most one transition per input",
+"explanation": "In deterministic machines, there is only one transition for a given state and input symbol."
+},
+{
+"question": "What does a parse tree show in CFG?",
+"options": ["Transitions", "Syntax structure", "Derivation order", "Stack usage"],
+"answer": "Syntax structure",
+"explanation": "A parse tree represents how a string is derived using the grammar rules."
+},
+{
+"question": "Which is a right-linear grammar rule?",
+"options": ["A → aB", "A → Ba", "A → abA", "A → BAB"],
+"answer": "A → aB",
+"explanation": "Right-linear grammars allow rules where the variable appears on the rightmost side."
+},
+{
+"question": "In regular expressions, what does the ‘+’ operator denote?",
+"options": ["Zero or more repetitions", "At least one repetition", "Optional", "Not operator"],
+"answer": "At least one repetition",
+"explanation": "The ‘+’ operator means one or more occurrences of the preceding symbol."
+},
+{
+"question": "Which machine accepts context-free languages?",
+"options": ["DFA", "NFA", "PDA", "Turing Machine"],
+"answer": "PDA",
+"explanation": "Pushdown Automata accept context-free languages using stack memory for recursion and nested structures."
+},
+{
+"question": "What kind of languages can be accepted by Pushdown Automata (PDA)?",
+"options": ["Regular languages", "Context-free languages", "Context-sensitive languages", "Unrestricted languages"],
+"answer": "Context-free languages",
+"explanation": "PDAs are more powerful than finite automata and are used to accept context-free languages."
+},
+{
+"question": "Which component is added to a finite automaton to make a Pushdown Automaton?",
+"options": ["A second state machine", "A stack", "A queue", "An additional tape"],
+"answer": "A stack",
+"explanation": "PDAs extend finite automata by using a stack to handle nested structures in context-free languages."
+},
+{
+"question": "Which of the following is not a property of deterministic PDA?",
+"options": ["It can accept a subset of CFLs", "It uses a single stack", "It always has a unique transition", "It accepts all CFLs"],
+"answer": "It accepts all CFLs",
+"explanation": "Deterministic PDAs can only accept a proper subset of context-free languages."
+},
+{
+"question": "What is the use of epsilon (ε) in PDA transitions?",
+"options": ["To terminate the computation", "To accept input without consuming symbols", "To represent invalid transitions", "To reject input"],
+"answer": "To accept input without consuming symbols",
+"explanation": "Epsilon transitions allow the PDA to change state or manipulate the stack without consuming input."
+},
+{
+"question": "What type of grammar generates context-free languages?",
+"options": ["Type 0", "Type 1", "Type 2", "Type 3"],
+"answer": "Type 2",
+"explanation": "According to Chomsky hierarchy, Type 2 grammars generate context-free languages."
+},
+{
+"question": "Which of the following is a non-context-free language?",
+"options": ["L = { a^n b^n | n ≥ 0 }", "L = { a^n b^n c^n | n ≥ 0 }", "L = { a^n | n mod 2 = 0 }", "L = { a, aa, aaa }"],
+"answer": "L = { a^n b^n c^n | n ≥ 0 }",
+"explanation": "This language requires counting three symbols simultaneously, which context-free grammars can't do."
+},
+{
+"question": "Which data structure does a PDA use to store intermediate results?",
+"options": ["Queue", "Heap", "Stack", "Array"],
+"answer": "Stack",
+"explanation": "Pushdown Automata use a stack to remember symbols, enabling parsing of nested structures."
+},
+{
+"question": "Which of the following is a valid PDA transition?",
+"options": ["(q, a, Z) → (p, AZ)", "(q, a, Z) → (p, aZ)", "(q, a, Z) → (p, λ)", "(q, λ, Z) → (p, A)"],
+"answer": "(q, λ, Z) → (p, A)",
+"explanation": "This is a valid epsilon transition where input isn't consumed, but stack is modified."
+},
+{
+"question": "What is a leftmost derivation in CFG?",
+"options": ["Rewriting the rightmost non-terminal", "Replacing all non-terminals", "Replacing the leftmost non-terminal", "Using production rules backward"],
+"answer": "Replacing the leftmost non-terminal",
+"explanation": "In leftmost derivation, at each step, the leftmost non-terminal is replaced using a production rule."
+},
+{
+"question": "Which tree represents the syntactic structure of a string in a CFG?",
+"options": ["Decision tree", "Syntax tree", "Binary tree", "Parse tree"],
+"answer": "Parse tree",
+"explanation": "A parse tree (or derivation tree) is used to show how a string can be generated from a grammar."
+},
+{
+"question": "What does ambiguity in a grammar mean?",
+"options": ["Too many terminals", "Multiple parse trees for one string", "Unreachable symbols", "Recursive productions"],
+"answer": "Multiple parse trees for one string",
+"explanation": "A grammar is ambiguous if there exists at least one string with more than one parse tree."
+},
+{
+"question": "Which normal form has productions like A → BC or A → a?",
+"options": ["Greibach Normal Form", "Chomsky Normal Form", "Backus Normal Form", "Right Linear Form"],
+"answer": "Chomsky Normal Form",
+"explanation": "In Chomsky Normal Form (CNF), production rules are restricted to A → BC or A → a."
+},
+{
+"question": "In Greibach Normal Form, what is the structure of production rules?",
+"options": ["A → a", "A → aB", "A → aα", "A → αa"],
+"answer": "A → aα",
+"explanation": "In GNF, production rules are of the form A → aα, where 'a' is a terminal and α is a string of non-terminals."
+},
+{
+"question": "Which normal form is best suited for recursive descent parsing?",
+"options": ["Chomsky Normal Form", "Greibach Normal Form", "Right Linear Grammar", "Unrestricted Grammar"],
+"answer": "Greibach Normal Form",
+"explanation": "GNF ensures that every derivation starts with a terminal, which is helpful in top-down parsing."
+},
+{
+"question": "What is the purpose of converting CFG into normal forms?",
+"options": ["Increase ambiguity", "Minimize stack usage", "Simplify parsing", "Make it regular"],
+"answer": "Simplify parsing",
+"explanation": "Normal forms simplify parsing algorithms and help in proving properties of languages."
+},
+{
+"question": "Which operation is not closed for context-free languages?",
+"options": ["Union", "Intersection", "Concatenation", "Kleene star"],
+"answer": "Intersection",
+"explanation": "CFLs are not closed under intersection; the intersection of two CFLs may not be a CFL."
+},
+{
+"question": "Which of the following operations are context-free languages closed under?",
+"options": ["Union and Concatenation", "Union and Intersection", "Complement and Union", "Intersection and Complement"],
+"answer": "Union and Concatenation",
+"explanation": "CFLs are closed under union, concatenation, and Kleene star, but not under intersection or complement."
+},
+{
+"question": "What is the pumping lemma used for in context-free languages?",
+"options": ["To prove ambiguity", "To prove regularity", "To prove non-context-freeness", "To parse strings"],
+"answer": "To prove non-context-freeness",
+"explanation": "The pumping lemma for CFLs is used to show that certain languages are not context-free."
+},
+{
+"question": "Which of the following languages is a context-free language?",
+"options": ["L = { a^n b^n | n ≥ 0 }", "L = { a^n b^n c^n | n ≥ 0 }", "L = { a^n b^n d^n | n ≥ 0 }", "L = { ww | w ∈ {a,b}* }"],
+"answer": "L = { a^n b^n | n ≥ 0 }",
+"explanation": "This is a classic example of a context-free language that can be generated by a PDA."
+},
+{
+"question": "Which machine model is used to accept context-sensitive languages?",
+"options": ["DFA", "PDA", "Linear bounded automaton", "Turing machine"],
+"answer": "Linear bounded automaton",
+"explanation": "Context-sensitive languages are accepted by Linear Bounded Automata, which are restricted Turing machines."
+},
+{
+"question": "Which of the following is true about context-sensitive grammars?",
+"options": ["They generate regular languages", "They generate CFLs", "They allow shrinking productions", "They are non-contracting"],
+"answer": "They are non-contracting",
+"explanation": "Context-sensitive grammars must not reduce the length of strings during derivation."
+},
+{
+"question": "What is the time complexity of checking membership in a context-free language?",
+"options": ["O(n)", "O(n^2)", "O(n^3)", "O(2^n)"],
+"answer": "O(n^3)",
+"explanation": "Using the CYK algorithm, membership in a CFL can be decided in O(n³) time."
+},
+{
+"question": "What is a right-linear grammar?",
+"options": ["A → aB", "A → Ba", "A → a", "A → a | aB"],
+"answer": "A → aB",
+"explanation": "In right-linear grammar, non-terminal is on the right side of the terminal in the production rule."
+},
+{
+"question": "Which type of automaton accepts right-linear languages?",
+"options": ["PDA", "DFA", "Turing Machine", "LBA"],
+"answer": "DFA",
+"explanation": "Right-linear grammars generate regular languages which are accepted by DFAs."
+},
+{
+"question": "Which of the following is a distinguishing feature of a context-sensitive grammar?",
+"options": ["A → a", "αAβ → αγβ", "A → AB", "A → ε"],
+"answer": "αAβ → αγβ",
+"explanation": "Context-sensitive grammars allow productions where a non-terminal is replaced depending on its surrounding context."
+}
+]

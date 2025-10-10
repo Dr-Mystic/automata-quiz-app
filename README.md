@@ -25,7 +25,7 @@ Automata-Quiz-App/
 ├── gui.py              # Main GUI file
 ├── quiz_engine.py      # Handles quiz logic and question loading
 ├── questions.json      # Contains all questions, options, and answers
-├── background.png      # (Optional) background image
+├── main.py             # Main entry point of project
 ├── README.md           # Project documentation
 └── LICENSE             # MIT license
 ```
@@ -40,7 +40,7 @@ Automata-Quiz-App/
 
 2. **Run the application**
    ```bash
-   python gui.py
+   python main.py
    ```
 
 3. **Enjoy learning Automata!**

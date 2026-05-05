@@ -62,3 +62,5 @@ You can easily add more questions to the `questions.json` file using the followi
 
 **Muhammad Farooq Nawaz Khan**  
 📧 [farooqnawaz.fk@gmail.com](mailto:farooqnawaz.fk@gmail.com)
+**Syed Muhammad Ahmad Shahid**  
+📧 [ahmadshah0114@gmail,com](mailto:ahmadshah0114@gmail,com)
